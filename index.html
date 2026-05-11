@@ -1,33 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Panto Furniture Landing page</title>
   <link rel="stylesheet" href="src/output.css">
 </head>
+
 <body>
-  <header class="bg-[url('/img/hero.jpg')] bg-no-repeat text-xs px-12 pt-6">
+  <header class="text-xs px-16 pt-6 relative h-screen">
+    <img src="img/heromain.png" alt="" class="absolute inset-0 h-full w-full -z-10">
+
 
     <!-- NAVIGATION SECTION -->
     <section class="flex justify-between text-white">
-    <h1 class="text-lg font-bold">Panto</h1>
-    <nav class="flex gap-12">
-      <a href="#Furniture">
-        <select name="Furniture" id="">
-          <option value="furniture">Furniture</option>
-          <option value="Sakarias Armchair">Sakarias</option>
-          <option value="Baltsar Chair">Baltsar</option>
-        </select>
-      </a>
-      <a href="#Shop">Shop</a>
-      <a href="#About Us">About Us</a>
-      <a href="#Contact">Contact</a>
-    </nav>
-    <img src="/img/image.png" alt="header bag" class="w-5 h-5">
+      <h1 class="text-xl font-bold">Panto</h1>
+      <nav class="flex gap-12">
+        <a href="#Furniture">
+          <select name="Furniture" id="">
+            <option value="furniture">Furniture</option>
+            <option value="Sakarias Armchair">Sakarias</option>
+            <option value="Baltsar Chair">Baltsar</option>
+          </select>
+        </a>
+        <a href="#Shop">Shop</a>
+        <a href="#About Us">About Us</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+      <img src="/img/image.png" alt="header bag" class="w-5 h-5">
+    </section>
+
+    <!-- HERO SECTION -->
+
+    <section class="text-white grid justify-center gap-4 text-center items-center pt-16 p-64">
+      <h2 class="text-6xl font-bold">Make your interior more minimalistic & modern</h2>
+      <p>Turn your room with panto into a lot more minimalist <br> and modern with ease and speed</p>
+      <div class="flex justify-between bg-[#FFFFFF]/10 mx-60 px-1 py-0.5 border border-[#FFFFFF]/30 rounded-full">
+        <input type="search" name="furniture" id="" placeholder="Search furniture">
+        <span><img src="img/image copy.png" alt="search logo" class="w-6"></span>
+      </div>
     </section>
   </header>
-  <main></main>
+
+  <main class="text-xs">
+
+    <!-- CHOOSNG US SECTION -->
+
+    <section class="linear-t from-white to-transparent grid grid-cols-4 gap-4 justify-center items-center px-6 py-12">
+      <div>
+        <h3 class="text-xl text-black font-bold ">Why <br> Choosing Us</h3>
+      </div>
+      <!-- card 1 -->
+      <div>
+        <h4 class="text-sm font-bold">Luxury facilities</h4>
+        <p class="mt-4">The advantage of hiring a workspace with us is that givees you comfortable service and
+          all-around facilities.
+        </p>
+        <button class="text-[#E58411]"><a href="#More info" class="font-medium">More Info</a><span
+            class="text-3xl">→</span></button>
+      </div>
+
+      <!-- card 2 -->
+      <div>
+        <h4 class="text-sm font-bold">Affordable Price</h4>
+        <p class="mt-4">You can get a workspace of the highst quality at an affordable price and still enjoy the
+          facilities that are oly here.
+        </p>
+        <button class="text-[#E58411]"><a href="#More info" class="font-medium">More Info</a><span
+            class="text-3xl">→</span></button>
+      </div>
+
+      <!-- card 3 -->
+      <div>
+        <h4 class="text-sm font-bold">Many Choices</h4>
+        <p class="mt-4">We provide many unique work space choices so that you can choose the workspace to your liking.
+        </p>
+        <button class="text-[#E58411]"><a href="#More info" class="font-medium">More Info</a><span
+            class="text-3xl">→</span></button>
+      </div>
+    </section>
+
+    <!-- Best Selling Product SECTION -->
+
+    <section class="mt-10">
+      <header class="grid justify-center items-center">
+        <h3 class="text-xl font-bold">Best Selling Product</h3>
+        <nav class="bg-[#EEEEEE] rounded-full flex items-center justify-around py-1 mt-3">
+          <a href="#Chair" class="hover:bg-white hover:rounded-full px-2 py-0.5">Chair</a>
+          <a href="#Beds" class="hover:bg-white hover:rounded-full px-2 py-0.5">Beds</a>
+          <a href="#Sofa" class="hover:bg-white hover:rounded-full px-2 py-0.5">Sofa</a>
+          <a href="#Lamp" class="hover:bg-white hover:rounded-full px-2 py-0.5">Lamp</a>
+        </nav>
+      </header>
+
+      <!-- chair display section -->
+    </section>
+
+  </main>
   <footer></footer>
 </body>
+
 </html>
