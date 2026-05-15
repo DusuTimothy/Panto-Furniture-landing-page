@@ -2,339 +2,312 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Panto Furniture Landing page</title>
-  <link rel="stylesheet" href="src/output.css">
+  <link rel="stylesheet" href="src/output.css" />
 </head>
 
-<body class="">
-  <header class="text-xs px-16 pt-6 relative h-screen">
-    <img src="img/heromain.png" alt="" class="absolute inset-0 h-full w-full -z-10">
+<body class="bg-white text-xs font-sans text-slate-900 selection:bg-[#E58411]/20">
+  <!-- Header start: hero background and navigation -->
+  <header class="relative min-h-screen overflow-hidden">
+    <img src="img/heromain.png" alt="Furniture background" class="absolute inset-0 h-full w-full" />
+    <div class="absolute inset-0 bg-slate-950/60"></div>
 
+    <div class="relative mx-auto flex flex-col justify-between px-6 py-6 sm:px-8 lg:px-16">
+      <nav class="flex text-white">
+        <h1><a href="" class="text-xl font-bold">Panto</a></h1>
 
-    <!-- NAVIGATION SECTION -->
-    <section class="flex justify-between text-white">
-      <h1 class="text-xl font-bold">Panto</h1>
-      <nav class="flex gap-12">
-        <a href="#Furniture">
-          <select name="Furniture" id="">
+        <div class="flex flex-1 flex-wrap items-center justify-center gap-3">
+          <select name="Furniture" id="Furniture"
+            class="rounded-full border border-white/30 bg-white/10 px-3 py-2 text-sm text-white outline-none focus:border-[#E58411] focus:ring-2 focus:ring-[#E58411]/25 backdrop-blur-sm">
             <option value="furniture">Furniture</option>
             <option value="Sakarias Armchair">Sakarias</option>
             <option value="Baltsar Chair">Baltsar</option>
           </select>
-        </a>
-        <a href="#Shop">Shop</a>
-        <a href="#About Us">About Us</a>
-        <a href="#Contact">Contact</a>
+          <a href="#Shop" class="text-sm hover:text-[#E58411]">Shop</a>
+          <a href="#About" class="text-sm hover:text-[#E58411]">About Us</a>
+          <a href="#Contact" class="text-sm hover:text-[#E58411]">Contact</a>
+        </div>
+
+        <div class="relative">
+          <img src="img/image.png" alt="Shopping bag icon" class="h-6 w-6" />
+          <img src="img/image copy 17.png" alt="notification icon" class="absolute top-0.5 -right-1 h-3.5 w-3.5" />
+        </div>
       </nav>
-      <div class="relative">
-      <img src="/img/image.png" alt="header bag" class="w-6 h-6">
-      <img src="img/image copy 17.png" alt="notification icon" class="w-3.5 absolute top-0.5 -right-1">
-      </div>
-    </section>
 
-    <!-- HERO SECTION -->
-
-    <section class="text-white grid justify-center gap-4 text-center items-center pt-16">
-      <h2 class="text-6xl font-bold">Make your interior more <br> minimalistic & modern</h2>
-      <p>Turn your room with panto into a lot more minimalist <br> and modern with ease and speed</p>
-      <div class="flex justify-between bg-[#FFFFFF]/10 mx-96 px-1 py-0.5 border border-[#FFFFFF]/30 rounded-full">
-        <input type="search" name="furniture" id="" placeholder="Search furniture">
-        <span><img src="img/image copy.png" alt="search logo" class="w-6"></span>
-      </div>
-    </section>
+      <!-- Section: Hero start -->
+      <section class="grid place-items-center gap-6 text-center text-white  pt-9 sm:pb-">
+        <h1 class="max-w-4xl text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+          Make your interior more minimalistic & modern
+        </h1>
+        <p class="max-w-2xl text-sm leading-relaxed sm:text-base">
+          Turn your room with panto into a lot more minimalist <br> and modern with ease and speed.
+        </p>
+        <div
+          class="rounded-full border border-white/30 bg-white/10 shadow-lg shadow-slate-950/30 backdrop-blur-sm p-2">
+          <div class="flex items-center gap-3 px-3">
+            <input type="search" name="furniture" placeholder="Search furniture"
+              class="w-full bg-transparent text-sm text-white placeholder:text-white/70 focus:outline-none" />
+            <button type="submit" class="rounded-full bg-white/20 p-1 text-white hover:bg-white/30">
+              <img src="img/image copy.png" alt="Search icon" class="h-5 w-5" />
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Hero end -->
+    </div>
   </header>
+  <!-- Header end -->
 
-  <main class="text-xs">
-
-    <!-- CHOOSNG US SECTION -->
-
-    <section class="flex justify-evenly items-center p-12">
+  <!-- Main start -->
+  <main class="mx-auto max-w-screen-2xl px-6 pb-16 sm:px-8 lg:px-16">
+    <!-- Section: Why Choosing Us start -->
+    <section class="grid gap-10 py-12 sm:grid-cols-[1.2fr,1fr] sm:items-center">
       <div>
-        <h3 class="text-xl text-black font-bold ">Why <br> Choosing Us</h3>
+        <h2 class="text-2xl font-bold text-slate-900 sm:text-3xl">Why Choosing Us</h2>
       </div>
-
-      <aside class="flex gap-6">
-        <!-- card 1 -->
-        <div>
-          <h4 class="text-sm font-bold">Luxury facilities</h4>
-          <p class="mt-4">The advantage of hiring a workspace <br> with us is that gives you comfortable <br> service
-            and
-            all-around facilities.
+      <div class="grid gap-6 sm:grid-cols-3">
+        <article class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm shadow-slate-500/5">
+          <h3 class="text-base font-bold">Luxury facilities</h3>
+          <p class="mt-4 text-sm leading-6 text-slate-600">
+            The advantage of hiring a workspace with us is that gives you comfortable service and all-around facilities.
           </p>
-          <button class="text-[#E58411]"><a href="#More info" class="font-medium">More Info</a><span
-              class="text-3xl">→</span></button>
-        </div>
+          <a href="#MoreInfo" class="mt-5 inline-flex items-center gap-2 text-[#E58411] font-medium">More Info <span
+              class="text-2xl">→</span></a>
+        </article>
 
-        <!-- card 2 -->
-        <div>
-          <h4 class="text-sm font-bold">Affordable Price</h4>
-          <p class="mt-4">You can get a workspace of the highest <br> quality at an affordable price and <br> still
-            enjoy the
-            facilities that are oly here.
+        <article class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm shadow-slate-500/5">
+          <h3 class="text-base font-bold">Affordable Price</h3>
+          <p class="mt-4 text-sm leading-6 text-slate-600">
+            You can get a workspace of the highest quality at an affordable price and still enjoy the facilities that
+            are only here.
           </p>
-          <button class="text-[#E58411]"><a href="#More info" class="font-medium">More Info</a><span
-              class="text-3xl">→</span></button>
-        </div>
+          <a href="#MoreInfo" class="mt-5 inline-flex items-center gap-2 text-[#E58411] font-medium">More Info <span
+              class="text-2xl">→</span></a>
+        </article>
 
-        <!-- card 3 -->
-        <div>
-          <h4 class="text-sm font-bold">Many Choices</h4>
-          <p class="mt-4">We provide many unique work space <br> choices so that you can choose the <br> workspace to
-            your liking.
+        <article class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm shadow-slate-500/5">
+          <h3 class="text-base font-bold">Many Choices</h3>
+          <p class="mt-4 text-sm leading-6 text-slate-600">
+            We provide many unique workspace choices so that you can choose the workspace to your liking.
           </p>
-          <button class="text-[#E58411]"><a href="#More info" class="font-medium">More Info</a><span
-              class="text-3xl">→</span></button>
-        </div>
-      </aside>
+          <a href="#MoreInfo" class="mt-5 inline-flex items-center gap-2 text-[#E58411] font-medium">More Info <span
+              class="text-2xl">→</span></a>
+        </article>
+      </div>
     </section>
+    <!-- Section: Why Choosing Us end -->
 
-    <!-- BEST SELLING PRODUCT SECTION -->
-
-    <section class="bg-[#F7F7F7] mt-10 p-6">
-      <header class="grid justify-center items-center mb-6">
-        <h3 class="text-xl font-bold">Best Selling Product</h3>
-        <nav class="bg-[#EEEEEE] rounded-full flex items-center justify-around py-1 mt-3">
-          <a href="#Chair" class="hover:bg-white hover:rounded-full px-2 py-0.5">Chair</a>
-          <a href="#Beds" class="hover:bg-white hover:rounded-full px-2 py-0.5">Beds</a>
-          <a href="#Sofa" class="hover:bg-white hover:rounded-full px-2 py-0.5">Sofa</a>
-          <a href="#Lamp" class="hover:bg-white hover:rounded-full px-2 py-0.5">Lamp</a>
+    <!-- Section: Best Selling Product start -->
+    <section class="rounded-4xl bg-[#F7F7F7] p-6 sm:p-10">
+      <header class="mb-8 text-center">
+        <h2 class="text-2xl font-bold text-slate-900">Best Selling Product</h2>
+        <nav class="mt-4 inline-flex flex-wrap items-center justify-center gap-2 rounded-full bg-[#EEEEEE] p-2">
+          <a href="#Chair" class="rounded-full px-4 py-1 text-sm hover:bg-white">Chair</a>
+          <a href="#Beds" class="rounded-full px-4 py-1 text-sm hover:bg-white">Beds</a>
+          <a href="#Sofa" class="rounded-full px-4 py-1 text-sm hover:bg-white">Sofa</a>
+          <a href="#Lamp" class="rounded-full px-4 py-1 text-sm hover:bg-white">Lamp</a>
         </nav>
       </header>
 
-      <!-- chair display section -->
-
-      <aside class="flex justify-center gap-10 items-center">
-        <!-- card 1 -->
-        <div class="bg-[#FFFFFF] rounded-2xl p-4">
-          <img src="img/image copy 2.png" alt="Armchair" class="w-32">
-          <div>
-            <p class="text-[#8D8D8D] mt-4">Chair</p>
-            <h3 class="font-bold">Sakarias Armchair</h3>
-            <img src="img/image copy 6.png" alt="rating" class="w-12">
-          </div>
-          <div class="flex justify-between items-center mt-4">
+      <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+        <article class="rounded-3xl bg-white p-6 shadow-sm shadow-slate-500/10">
+          <img src="img/image copy 2.png" alt="Armchair" class="mx-auto w-40" />
+          <p class="mt-4 text-sm text-slate-500">Chair</p>
+          <h3 class="mt-2 font-bold">Sakarias Armchair</h3>
+          <img src="img/image copy 6.png" alt="Rating" class="mt-2 w-12" />
+          <div class="mt-4 flex items-center justify-between">
             <p class="font-bold">$392</p>
-            <p class="text-sm text-white bg-black rounded-full px-2.5 py-1">+</p>
+            <button class="rounded-full bg-slate-900 px-3 py-1 text-sm text-white">+</button>
           </div>
-        </div>
+        </article>
 
-        <!-- card 2 -->
-        <div class="bg-[#FFFFFF] rounded-2xl p-4">
-          <img src="img/image copy 3.png" alt="Baltsar Chair" class="w-32">
-          <div>
-            <p class="text-[#8D8D8D] mt-4">Chair</p>
-            <h3 class="font-bold">Baltsar Chair</h3>
-            <img src="img/image copy 6.png" alt="rating" class="w-12">
-          </div>
-          <div class="flex justify-between items-center mt-4">
+        <article class="rounded-3xl bg-white p-6 shadow-sm shadow-slate-500/10">
+          <img src="img/image copy 3.png" alt="Baltsar Chair" class="mx-auto w-40" />
+          <p class="mt-4 text-sm text-slate-500">Chair</p>
+          <h3 class="mt-2 font-bold">Baltsar Chair</h3>
+          <img src="img/image copy 6.png" alt="Rating" class="mt-2 w-12" />
+          <div class="mt-4 flex items-center justify-between">
             <p class="font-bold">$299</p>
-            <p class="text-sm text-white bg-black rounded-full px-2.5 py-1">+</p>
+            <button class="rounded-full bg-slate-900 px-3 py-1 text-sm text-white">+</button>
           </div>
-        </div>
+        </article>
 
-        <!-- card 3 -->
-        <div class="bg-[#FFFFFF] rounded-2xl p-4">
-          <img src="img/image copy 4.png" alt="Anjay Chair" class="w-32">
-          <div>
-            <p class="text-[#8D8D8D] mt-4">Chair</p>
-            <h3 class="font-bold">Anjay Chair</h3>
-            <img src="img/image copy 6.png" alt="rating" class="w-12">
-          </div>
-          <div class="flex justify-between items-center mt-4">
+        <article class="rounded-3xl bg-white p-6 shadow-sm shadow-slate-500/10">
+          <img src="img/image copy 4.png" alt="Anjay Chair" class="mx-auto w-40" />
+          <p class="mt-4 text-sm text-slate-500">Chair</p>
+          <h3 class="mt-2 font-bold">Anjay Chair</h3>
+          <img src="img/image copy 6.png" alt="Rating" class="mt-2 w-12" />
+          <div class="mt-4 flex items-center justify-between">
             <p class="font-bold">$519</p>
-            <p class="text-sm text-white bg-black rounded-full px-2.5 py-1">+</p>
+            <button class="rounded-full bg-slate-900 px-3 py-1 text-sm text-white">+</button>
           </div>
-        </div>
+        </article>
 
-        <!-- card 4 -->
-        <div class="bg-[#FFFFFF] rounded-2xl p-4">
-          <img src="img/image copy 5.png" alt="Nyantuy Chair" class="w-32">
-          <div>
-            <p class="text-[#8D8D8D] mt-4">Chair</p>
-            <h3 class="font-bold">Nyantuy Chair</h3>
-            <img src="img/image copy 6.png" alt="rating" class="w-12">
-          </div>
-          <div class="flex justify-between items-center mt-4">
+        <article class="rounded-3xl bg-white p-6 shadow-sm shadow-slate-500/10">
+          <img src="img/image copy 5.png" alt="Nyantuy Chair" class="mx-auto w-40" />
+          <p class="mt-4 text-sm text-slate-500">Chair</p>
+          <h3 class="mt-2 font-bold">Nyantuy Chair</h3>
+          <img src="img/image copy 6.png" alt="Rating" class="mt-2 w-12" />
+          <div class="mt-4 flex items-center justify-between">
             <p class="font-bold">$921</p>
-            <p class="text-sm text-white bg-black rounded-full px-2.5 py-1">+</p>
+            <button class="rounded-full bg-slate-900 px-3 py-1 text-sm text-white">+</button>
           </div>
-        </div>
-      </aside>
-      <div class="text-[#E58411] flex justify-center">
-        <button><a href="#More info" class="font-medium">View All</a><span class="text-3xl">→</span></button>
-        <div></div>
+        </article>
+      </div>
+
+      <div class="mt-8 flex justify-center">
+        <a href="#MoreInfo" class="inline-flex items-center gap-2 text-[#E58411] font-medium">View All <span
+            class="text-3xl">→</span></a>
       </div>
     </section>
+    <!-- Section: Best Selling Product end -->
 
-    <!-- EXPERIENCE SECTION -->
-
-    <section class="flex justify-evenly pt-32">
-      <aside class="">
-        <div class="relative">
-          <img src="img/Rectangle 1446.png" alt="chair" class="w-72 shadow-2xl">
-          <img src="img/Rectangle 1448.png" alt="horrizontal" class="w-56 absolute left-24 top-10 -z-10">
-          <img src="img/Rectangle 1445.png" alt="vertical" class="h-56 absolute bottom-6 -z-10">
+    <!-- Section: Experience feature start -->
+    <section class="grid gap-10 py-20 lg:grid-cols-2 lg:items-center">
+      <div class="flex justify-center">
+        <div class="relative max-w-md">
+          <img src="img/Rectangle 1446.png" alt="Chair display" class="w-full rounded-r-4xl shadow-2xl" />
+          <img src="img/Rectangle 1448.png" alt="Horizontal accent"
+            class="absolute -top-9 w-96 rounded-tr-3xl shadow-2xl bg-[#F7F7F7] -z-20" />
+          <img src="img/Rectangle 1445.png" alt="Vertical accent"
+            class="absolute bottom-10 -right-9 h-60 rounded-3xl shadow-2xl -z-10" />
         </div>
-      </aside>
+      </div>
 
-      <aside class="mr-30">
-        <div>
-          <p class="text-[#E58411] text-sm font-medium">Experience</p>
-          <h4 class="text-2xl font-bold">We Provide You The <br> Best Experience</h4>
-          <p class="mt-4">You don’t have to worry about the result because all of these <br> interiors are made by
-            people who
-            are professionals in their fields <br> with an elegant and lucurious style and with premium quality <br>
-            materials
-          </p>
-          <button class="text-[#E58411]"><a href="#More info" class="font-medium">More Info</a><span
-              class="text-3xl">→</span></button>
-        </div>
-      </aside>
-    </section>
-
-    <!-- MATERIALS SECTION -->
-
-    <section class="mt-32 flex justify-around">
-      <aside>
-        <div>
-          <p class="text-[#E58411] text-sm font-medium">MATERIALS</p>
-          <h4 class="text-2xl font-bold">Very Serious <br> Materials For Making <br> Furniture</h4>
-          <p class="mt-4">Because panto was very serious about designing furniture for our <br> environment, using a
-            very
-            expensive and famous capital but at a <br> relatively low price
-          </p>
-          <button class="text-[#E58411]"><a href="#More info" class="font-medium">More Info</a><span
-              class="text-3xl">→</span></button>
-        </div>
-      </aside>
-
-      <aside class="pt-20">
-        <div class="relative">
-          <img src="img/Rectangle 1450.png" alt="chair" class="w-36 absolute right-68 bottom-54 shadow-2xl">
-          <img src="img/Rectangle 1450 (1).png" alt="horrizontal" class="w-36 absolute right-68 top-12 shadow-2xl">
-          <div>
-            <img src="img/Rectangle 1446 (1).png" alt="vertical" class="w-60 relative top-2 shadow-2xl">
-            <img src="img/Rectangle 1445 (1).png" alt="vertical" class="w-32 absolute -top-6 right-0 -z-10">
-          </div>
-        </div>
-      </aside>
-    </section>
-
-    <!-- TESTIMONIALS -->
-
-    <section class="mt-32">
-      <aside class="grid justify-center text-center gap-2">
-        <p class="text-[#E58411]">TESTIMONIALS</p>
-        <h3 class="text-xl font-bold">Our Client Reviews</h3>
-      </aside>
-
-      <!-- TESTIMONIALS CARDS SECTON -->
-      <aside class="flex justify-center gap-10 mt-12">
-
-        <!-- Card 1 -->
-
-        <div class="relative shadow-2xl">
-          <img src="img/image copy 10.png" alt="background 1" class="w-64">
-
-          <div class="flex flex-col items-center absolute bg-white rounded-2xl px-5 py-2 bottom-2 left-3">
-            <img src="img/image copy 13.png" alt="profile 1"
-              class="w-10 border-4 border-white rounded-full absolute -top-4.5">
-            <h3 class="text-lg mt-4 font-bold">Bang Upin</h3>
-            <p class="font-extralight">Pedagang Asongan</p>
-            <p class="font-light mt-3  text-center">“Terimakasih banyak, kini ruanganku <br> menjadi lebih mewah dan
-              terlihat <br> mahal“
-            </p>
-            <img src="img/image copy 16.png" alt="Ratings" class="w-20 mt-3">
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-
-        <div class="relative shadow-2xl">
-          <img src="img/image copy 11.png" alt="background 1" class="w-64">
-
-          <div class="flex flex-col items-center absolute bg-white rounded-2xl px-5 py-2 bottom-2 left-3">
-            <img src="img/image copy 14.png" alt="profile 1"
-              class="w-10 border-4 border-white rounded-full absolute -top-4.5">
-            <h3 class="text-lg mt-4 font-bold">Ibuk Sukijan</h3>
-            <p class="font-extralight">Pedagang Asongan</p>
-            <p class="font-light mt-3  text-center">“Makasih Panto, aku sekarang berasa <br> tinggal di apartment karena
-              barang- <br> barang yang terlihat mewah“
-            </p>
-            <img src="img/image copy 16.png" alt="Ratings" class="w-20 mt-3">
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-
-        <div class="relative shadow-2xl">
-          <img src="img/image copy 12.png" alt="background 1" class="w-64">
-
-          <div class="flex flex-col items-center absolute bg-white rounded-2xl px-5 py-2 bottom-2 left-3">
-            <img src="img/image copy 15.png" alt="profile 1"
-              class="w-10 border-4 border-white rounded-full absolute -top-4.5">
-            <h3 class="text-lg font-bold mt-4">Mpok Ina</h3>
-            <p class="font-extralight">Pedagang Asongan</p>
-            <p class="font-light mt-3  text-center">“Sangat terjangkau untuk kantong <br> saya yang tidak terlalu banyak“
-            </p>
-            <img src="img/image copy 16.png" alt="Ratings" class="w-20 mt-3">
-          </div>
-        </div>
-      </aside>
-    </section>
-
-  </main>
-
-  <!-- FOOTER SECTION -->
-
-  <footer class="mt-32 text-xs">
-    <section class="flex justify-center gap-32">
-      <aside>
-        <h3 class="text-sm font-bold mb-4">Panto</h3>
-        <p>The advantage of hiring a workspace with <br> us is that givees you comfortable service <br> and all-around
-          facilities.
+      <div>
+        <p class="text-sm font-medium text-[#E58411]">Experience</p>
+        <h2 class="mt-4 text-3xl font-bold text-slate-900">We Provide You The Best Experience</h2>
+        <p class="mt-6 max-w-xl leading-7 text-slate-600">
+          You don’t have to worry about the result because all of these interiors are made by people who are
+          professionals in their fields with an elegant and luxurious style and with premium quality materials.
         </p>
-      </aside>
-
-      <aside class="grid gap-2">
-        <h3 class="text-[#E58411] font-medium">Services</h3>
-        <p>Email Marketing</p>
-        <p>Campaigns</p>
-        <p>Branding</p>
-      </aside>
-
-      <aside class="grid gap-2">
-        <h3 class="text-[#E58411] font-medium">Furniture</h3>
-        <p>Beds</p>
-        <p>Chair</p>
-        <p>All</p>
-      </aside>
-
-      <aside class="grid gap-2">
-        <h3 class="text-[#E58411] font-medium">Follow Us</h3>
-        <div class="flex gap-3"><span class="w-2"><img src="img/image copy 7.png" alt="Facebook"></span>
-          <p>Facebook</p>
-        </div>
-        <div class="flex gap-3"><span class="w-3.5"><img src="img/image copy 8.png" alt="Twitter"></span>
-          <p>Twitter</p>
-        </div>
-        <div class="flex gap-3"><span class="w-3.5"><img src="img/image copy 9.png" alt="Instagram"></span>
-          <p>Instagram</p>
-        </div>
-      </aside>
+        <a href="#MoreInfo" class="mt-6 text-[#E58411] font-medium">More Info <span class="text-4xl">→</span></a>
+      </div>
     </section>
+    <!-- Section: Experience feature end -->
 
-    <section class="mt-20 flex justify-around mb-4">
-      <aside class="font-extralight">Copyright © 2021</aside>
+    <!-- Section: Materials start -->
+    <section class="grid gap-20 py-20 lg:grid-cols-2">
+      <div>
+        <p class="text-sm font-medium text-[#E58411]">MATERIALS</p>
+        <h2 class="mt-4 text-3xl font-bold text-slate-900">Very Serious Materials For Making Furniture</h2>
+        <p class="mt-6 max-w-xl leading-7 text-slate-600">
+          Because panto was very serious about designing furniture for our <br> environment, using a very expensive and
+          famous capital but at a <br> relatively low price.
+        </p>
+        <a href="#MoreInfo" class="mt-6 inline-flex items-center gap-2 text-[#E58411] font-medium">More Info <span
+            class="text-3xl">→</span></a>
+      </div>
 
-      <aside class="flex gap-10">
-        <p>Terms & Conditions</p>
-        <p>Privacy Policy</p>
-      </aside>
+      <div class="flex justify-center">
+        <div class="relative max-w-md mt-32">
+          <img src="img/Rectangle 1446 (1).png" alt="Large material" class="w-80 rounded-l-2xl shadow-2xl" />
+          <img src="img/Rectangle 1450.png" alt="Small accent"
+            class="absolute bottom-0 right-84 rounded-2xl shadow-2xl" />
+          <img src="img/Rectangle 1450 (1).png" alt="Small accent 2"
+            class="absolute -top-36 right-82 w-36  rounded-3xl shadow-2xl" />
+          <img src="img/Rectangle 1445 (1).png" alt="Overlay accent"
+            class="absolute w-56 h-72 -top-9 right-0 rounded-l-2xl shadow-2xl -z-20" />
+        </div>
+      </div>
     </section>
+    <!-- Section: Materials end -->
+
+    <!-- Section: Testimonials start -->
+    <section class="py-20">
+      <div class="mb-10 text-center">
+        <p class="text-sm font-medium text-[#E58411]">TESTIMONIALS</p>
+        <h2 class="mt-2 text-2xl font-bold text-slate-900">Our Client Reviews</h2>
+      </div>
+
+      <div class="grid gap-8 sm:grid-cols-2 xl:grid-cols-3">
+        <article class="relative overflow-hidden rounded-4xl bg-white shadow-2xl">
+          <img src="img/image copy 10.png" alt="Testimonial background" class="w-full" />
+          <div class="absolute inset-x-3 bottom-3 rounded-3xl bg-white/95 p-5 shadow-lg">
+            <img src="img/image copy 13.png" alt="Profile 1"
+              class="-mt-10 h-10 w-10 rounded-full border-4 border-white object-cover" />
+            <h3 class="mt-4 text-lg font-bold">Bang Upin</h3>
+            <p class="text-sm text-slate-500">Pedagang Asongan</p>
+            <p class="mt-3 text-sm leading-6 text-slate-600 text-center">“Terimakasih banyak, kini ruanganku menjadi
+              lebih mewah dan terlihat mahal.“</p>
+            <img src="img/image copy 16.png" alt="Ratings" class="mx-auto mt-4 w-20" />
+          </div>
+        </article>
+
+        <article class="relative overflow-hidden rounded-[2rem] bg-white shadow-2xl">
+          <img src="img/image copy 11.png" alt="Testimonial background" class="w-full" />
+          <div class="absolute inset-x-3 bottom-3 rounded-3xl bg-white/95 p-5 shadow-lg">
+            <img src="img/image copy 14.png" alt="Profile 2"
+              class="-mt-10 h-10 w-10 rounded-full border-4 border-white object-cover" />
+            <h3 class="mt-4 text-lg font-bold">Ibuk Sukijan</h3>
+            <p class="text-sm text-slate-500">Pedagang Asongan</p>
+            <p class="mt-3 text-sm leading-6 text-slate-600 text-center">“Makasih Panto, aku sekarang berasa tinggal di
+              apartment karena barang-barang yang terlihat mewah.“</p>
+            <img src="img/image copy 16.png" alt="Ratings" class="mx-auto mt-4 w-20" />
+          </div>
+        </article>
+
+        <article class="relative overflow-hidden rounded-[2rem] bg-white shadow-2xl">
+          <img src="img/image copy 12.png" alt="Testimonial background" class="w-full" />
+          <div class="absolute inset-x-3 bottom-3 rounded-3xl bg-white/95 p-5 shadow-lg">
+            <img src="img/image copy 15.png" alt="Profile 3"
+              class="-mt-10 h-10 w-10 rounded-full border-4 border-white object-cover" />
+            <h3 class="mt-4 text-lg font-bold">Mpok Ina</h3>
+            <p class="text-sm text-slate-500">Pedagang Asongan</p>
+            <p class="mt-3 text-sm leading-6 text-slate-600 text-center">“Sangat terjangkau untuk kantong saya yang
+              tidak terlalu banyak.“</p>
+            <img src="img/image copy 16.png" alt="Ratings" class="mx-auto mt-4 w-20" />
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Section: Testimonials end -->
+  </main>
+  <!-- Main end -->
+
+  <!-- Footer start -->
+  <footer class="border-t border-slate-200 bg-slate-50 px-6 py-12 text-slate-700 sm:px-8 lg:px-16">
+    <div class="mx-auto grid max-w-screen-2xl gap-10 sm:grid-cols-2 lg:grid-cols-4">
+      <div>
+        <h3 class="text-sm font-bold text-slate-900">Panto</h3>
+        <p class="mt-4 text-sm leading-6 text-slate-600">The advantage of hiring a workspace with us is that gives you
+          comfortable service and all-around facilities.</p>
+      </div>
+      <div class="space-y-2">
+        <h4 class="text-sm font-medium text-[#E58411]">Services</h4>
+        <p class="text-sm">Email Marketing</p>
+        <p class="text-sm">Campaigns</p>
+        <p class="text-sm">Branding</p>
+      </div>
+      <div class="space-y-2">
+        <h4 class="text-sm font-medium text-[#E58411]">Furniture</h4>
+        <p class="text-sm">Beds</p>
+        <p class="text-sm">Chair</p>
+        <p class="text-sm">All</p>
+      </div>
+      <div class="space-y-3">
+        <h4 class="text-sm font-medium text-[#E58411]">Follow Us</h4>
+        <div class="flex items-center gap-3 text-sm text-slate-600"><img src="img/image copy 7.png" alt="Facebook"
+            class="h-4 w-4" />Facebook</div>
+        <div class="flex items-center gap-3 text-sm text-slate-600"><img src="img/image copy 8.png" alt="Twitter"
+            class="h-4 w-4" />Twitter</div>
+        <div class="flex items-center gap-3 text-sm text-slate-600"><img src="img/image copy 9.png" alt="Instagram"
+            class="h-4 w-4" />Instagram</div>
+      </div>
+    </div>
+
+    <div
+      class="mt-10 flex flex-col items-center justify-between gap-4 border-t border-slate-200 pt-6 text-sm text-slate-500 sm:flex-row">
+      <p>Copyright © 2021</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
   </footer>
+  <!-- Footer end -->
 </body>
 
 </html>
